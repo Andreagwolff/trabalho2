@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formulario">
+
+    <ImageView
+        android:id="@+id/fundo_formulario"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/texto_formulario_dendrometrico"
+        android:layout_width="341dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Formulário Dendrométrico"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/texto_formulario_fazenda"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Fazenda"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_dendrometrico" />
+    <TextView
+        android:id="@+id/texto_formulario_cod_fazenda"
+        android:layout_width="52dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="8dp"
+        android:text="Cód"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/texto_formulario_fazenda"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_dendrometrico" />
+    <TextView
+        android:id="@+id/texto_formulario_municipio"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Município"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/texto_formulario_cod_fazenda"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_dendrometrico" />
+    <EditText
+        android:id="@+id/editText_fazenda"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_fazenda" />
+    <EditText
+        android:id="@+id/editText_fazenda_cod"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editText_fazenda"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_cod_fazenda" />
+    <EditText
+        android:id="@+id/editText_municipio"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editText_fazenda_cod"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_municipio" />
+    <TextView
+        android:id="@+id/texto_formulario_projeto"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Projeto"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_fazenda" />
+    <TextView
+        android:id="@+id/texto_formulario_cod_projeto"
+        android:layout_width="52dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="8dp"
+        android:text="Cód"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/texto_formulario_projeto"
+        app:layout_constraintTop_toBottomOf="@+id/editText_fazenda_cod" />
+    <TextView
+        android:id="@+id/texto_formulario_h_inicio"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="H Inicio"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/texto_formulario_cod_projeto"
+        app:layout_constraintTop_toBottomOf="@+id/editText_municipio" />
+    <EditText
+        android:id="@+id/editText_projeto"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_projeto" />
+    <EditText
+        android:id="@+id/editText_projeto_cod"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editText_projeto"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_cod_projeto" />
+    <EditText
+        android:id="@+id/editText_h_inicio"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editText_projeto_cod"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_h_inicio" />
+
+    <TextView
+        android:id="@+id/texto_formulario_especie"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Espécie"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_projeto" />
+
+    <EditText
+        android:id="@+id/editText_especie"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_especie" />
+    <TextView
+        android:id="@+id/texto_formulario_amostra"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Amostra"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_especie" />
+    <EditText
+        android:id="@+id/editText_amostra"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_amostra" />
+    <TextView
+        android:id="@+id/texto_formulario_area"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Área "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_amostra" />
+    <EditText
+        android:id="@+id/editText_area"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_area" />
+    <TextView
+        android:id="@+id/texto_formulario_cod_especie"
+        android:layout_width="52dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="8dp"
+        android:text="Cód"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/texto_formulario_especie"
+        app:layout_constraintTop_toBottomOf="@+id/editText_projeto_cod" />
+    <EditText
+        android:id="@+id/editText_especie_cod"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editText_especie"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_cod_especie" />
+    <TextView
+        android:id="@+id/texto_formulario_ano_plantio"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Ano Plan"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/texto_formulario_cod_especie"
+        app:layout_constraintTop_toBottomOf="@+id/editText_h_inicio" />
+    <EditText
+        android:id="@+id/editText_ano_plan"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editText_especie_cod"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_ano_plantio" />
+    <TextView
+        android:id="@+id/texto_formulario_talhao"
+        android:layout_width="52dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="8dp"
+        android:text="Talh"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/texto_formulario_amostra"
+        app:layout_constraintTop_toBottomOf="@+id/editText_especie_cod" />
+    <TextView
+        android:id="@+id/texto_formulario_estrato"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Estrato"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/texto_formulario_talhao"
+        app:layout_constraintTop_toBottomOf="@+id/editText_ano_plan" />
+    <EditText
+        android:id="@+id/editText_talh"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editText_amostra"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_talhao" />
+    <EditText
+        android:id="@+id/editText_estrato"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editText_talh"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_estrato" />
+
+    <TextView
+        android:id="@+id/texto_formulario_unidade"
+        android:layout_width="52dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="8dp"
+        android:text="Unid"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/texto_formulario_area"
+        app:layout_constraintTop_toBottomOf="@+id/editText_talh" />
+    <TextView
+        android:id="@+id/texto_formulario_tempo"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Data "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/texto_formulario_unidade"
+        app:layout_constraintTop_toBottomOf="@+id/editText_estrato" />
+    <EditText
+        android:id="@+id/editText_unid"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editText_area"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_unidade" />
+    <EditText
+        android:id="@+id/editText_tempo"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/editText_unid"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_tempo" />
+
+    <TextView
+        android:id="@+id/texto_formulario_responsavel"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:text="Responsável"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_unid" />
+
+    <EditText
+        android:id="@+id/editText_responsavel"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_formulario_responsavel" />
+
+    <Button
+        android:id="@+id/anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Anterior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_area" />
+
+    <Button
+        android:id="@+id/proximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Próximo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_tempo" />
+
+
+</android.support.constraint.ConstraintLayout>
